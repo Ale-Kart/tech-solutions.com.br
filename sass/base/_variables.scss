@@ -1,0 +1,16 @@
+$colors-system: (
+	primary: #8144bd,
+	// primary: #8144bd,
+	secondary: #00c9a7,
+	// secondary: #31bd5f,
+	black: #222,
+	cyan: #f5f5f5,
+	gray: #c2c0c0,
+	//  black => #121212
+);
+
+:root {
+	@each $name, $color in $colors-system {
+		--#{$name}: #{$color};
+	}
+}

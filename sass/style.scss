@@ -1,0 +1,48 @@
+@import "./base/variables";
+@import "./font/font";
+@import "./components/header";
+@import "./pages/home";
+@import "./pages/login";
+@import "./pages/register";
+
+* {
+	font-family: "Montserrat";
+}
+
+body {
+}
+
+// @mixin convertToShadow($name) {
+// 	@if $name == "primary" {
+// 		background-color: #d9c6eb14;
+// 		color: #a258eb;
+// 	}
+// }
+// todo
+// a {
+// 	color: var(--cyan);
+// 	opacity: 0.8;
+// 	text-decoration: none;
+// 	transition: all 0.5s;
+// 	// padding: 10px;
+// 	&:hover {
+// 		// color: var(--primary);
+// 		opacity: 1;
+// 		@include convertToShadow(--cyan);
+// 	}
+// }
+
+.link-primary {
+	color: var(--primary);
+	text-decoration: none;
+	opacity: 1;
+	transition: 0.5s;
+	font-weight: 500;
+	&:hover,
+	&:active {
+		opacity: 1;
+		text-decoration: none;
+		background-color: #d9c6eb14;
+		color: #a258eb;
+	}
+}
