@@ -16,4 +16,11 @@ btnTogglePassword.onclick = () => {
 	inputPassword.getAttribute('type') === 'password' ?
 		inputPassword.setAttribute('type','text')
 		: inputPassword.setAttribute('type','password');
-}
+};
+
+// Máscara para o input da Página - Register
+$(document).ready( function() {
+	$('#cadastro-data-aniversario').mask('00/00/0000');
+	$('#cadastro-telefone').mask('(00) 00000-0000');
+	$('#cadastro-cpf').mask('000.000.000-00');
+} )

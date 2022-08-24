@@ -32,7 +32,7 @@
 									<label for="">CPF</label>
 									<span class="input-login">
 										<i class="fas fa-id-card"></i>
-										<input type="number" class="" name="cpf" id="" placeholder="000.000.000-00">
+										<input id="cadastro-cpf" type="text" class="" name="cpf" id="" placeholder="000.000.000-00">
 									</span>
 								</div>
 							</div>
@@ -50,7 +50,7 @@
 									<label for="">Telefone</label>
 									<span class="input-login">
 										<i class="fas fa-mobile-alt"></i>
-										<input type="tel" class="" name="telefone" id="" placeholder="Telephone">
+										<input id="cadastro-telefone" type="tel" class="" name="telefone" id="" placeholder="(00) 00000-0000">
 									</span>
 								</div>
 							</div>
@@ -59,7 +59,7 @@
 									<label for="">Data de Nascimento</label>
 									<span class="input-login">
 										<i class="fas fa-calendar-alt"></i>
-										<input type="date" class="" name="data-nascimento" id="" placeholder="00/00/0000">
+										<input id="cadastro-data-aniversario" type="text" class="" name="data-nascimento" id="" placeholder="00/00/0000">
 									</span>
 								</div>
 							</div>
@@ -77,7 +77,6 @@
 							<span class="input-login">
 								<i class="fas fa-lock"></i>
 								<input type="password" class="input-password-confirm" id="" placeholder="Confirm the Password">
-								<i class="far fa-eye-slash" id="toggle-password"></i>
 							</span>
 						</div>
 						<div class="my-3">
@@ -98,11 +97,8 @@
 			$(this).toggleClass("fa-eye-slash fa-eye");
 			console.log("teste de click");
 			input_password.getAttribute('type') === 'password' ?
-				input_password.setAttribute('type','text') 
+				input_password.setAttribute('type','text')
 				: input_password.setAttribute('type','password');
-			input_password_confirm.getAttribute('type') === 'password' ?
-				input_password_confirm.setAttribute('type','text') 
-				: input_password_confirm.setAttribute('type','password');
 		});
 	</script>
 
