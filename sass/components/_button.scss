@@ -1,0 +1,8 @@
+@use "../base/variables";
+
+.primary-btn {
+  background-color: var(--primary);
+  color: var(--cyan);
+  display: block;
+  width: 100%;
+}

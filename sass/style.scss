@@ -1,12 +1,13 @@
 @import "./base/variables";
 @import "./font/font";
 @import "./components/header";
+@import "./components/button";
 @import "./pages/home";
 @import "./pages/login";
 @import "./pages/register";
 
 * {
-	font-family: "Montserrat";
+  font-family: "Montserrat";
 }
 
 body {
@@ -33,16 +34,16 @@ body {
 // }
 
 .link-primary {
-	color: var(--primary);
-	text-decoration: none;
-	opacity: 1;
-	transition: 0.5s;
-	font-weight: 500;
-	&:hover,
-	&:active {
-		opacity: 1;
-		text-decoration: none;
-		background-color: #d9c6eb14;
-		color: #a258eb;
-	}
+  color: var(--primary);
+  text-decoration: none;
+  opacity: 1;
+  transition: 0.5s;
+  font-weight: 500;
+  &:hover,
+  &:active {
+    opacity: 1;
+    text-decoration: none;
+    background-color: #d9c6eb14;
+    color: #a258eb;
+  }
 }

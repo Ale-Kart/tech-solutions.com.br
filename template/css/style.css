@@ -14,6 +14,7 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format("woff2");
 }
+
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -21,6 +22,7 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format("woff2");
 }
+
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -28,6 +30,7 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format("woff2");
 }
+
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -35,6 +38,7 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format("woff2");
 }
+
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -42,6 +46,7 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format("woff2");
 }
+
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -49,6 +54,7 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format("woff2");
 }
+
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -56,6 +62,7 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format("woff2");
 }
+
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -63,34 +70,46 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format("woff2");
 }
+
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 21px 0px;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   background: transparent;
   position: absolute;
   z-index: 10;
   width: 100%;
 }
+
 header.fixed-top {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   height: 80px;
-  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
-  background-color: var(--cyan);
+  -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0);
+          box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0);
+  background-color: var(--black);
   padding: 0;
 }
+
 header .logo {
   text-decoration: none;
 }
+
 header .logo:hover {
   color: var(--primary);
   text-decoration: none;
+  -webkit-transition: 0.35s all ease-in-out;
   transition: 0.35s all ease-in-out;
 }
+
 header .logo h1 {
   font-size: 30px;
   margin: 0;
@@ -98,28 +117,44 @@ header .logo h1 {
   letter-spacing: 0.8px;
   color: var(--cyan);
 }
+
 header .navbar {
   padding: 0;
   margin: 0;
 }
+
 header .navbar ul {
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 14px;
 }
+
 header .navbar ul li {
   list-style: none;
 }
+
 header .navbar ul li a {
   text-decoration: none;
   color: var(--cyan);
   font-weight: 600;
 }
+
 header .navbar ul li a:hover {
   text-decoration: none;
   color: #bb86fc;
+  -webkit-transition: 0.35s all ease-in-out;
   transition: 0.35s all ease-in-out;
+}
+
+@use "../base/variables";
+.primary-btn {
+  background-color: var(--primary);
+  color: var(--cyan);
+  display: block;
+  width: 100%;
 }
 
 /*
@@ -133,14 +168,21 @@ header .navbar ul li a:hover {
   padding: 64px 0px;
   position: relative;
 }
+
 #banner .banner-home img {
   width: 98%;
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
+
 #banner .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 #banner h2 {
   margin: 0 0 10px 0;
   font-size: 46px;
@@ -148,17 +190,24 @@ header .navbar ul li a:hover {
   line-height: 56px;
   color: var(--cyan);
 }
+
 #banner p {
   color: var(--cyan);
   font-size: 20px;
   margin-top: 16px;
 }
+
 #banner .btn-call-to-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 32px;
   margin-top: 32px;
 }
+
 #banner .btn-call-to-action a {
   color: var(--cyan);
   text-decoration: none;
@@ -166,6 +215,7 @@ header .navbar ul li a:hover {
   text-shadow: 1px 1px 1px #000;
   letter-spacing: 1px;
 }
+
 #banner .btn-call-to-action a:first-child {
   font-size: 15px;
   font-weight: 600;
@@ -173,17 +223,21 @@ header .navbar ul li a:hover {
   display: inline-block;
   padding: 14px 40px;
   border-radius: 50px;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.8);
+          box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.8);
   border: 2px solid rgba(255, 255, 255, 0.1);
   text-decoration: none;
 }
+
 #banner .box-icons {
   margin-top: 60px;
   padding-bottom: 60px;
 }
+
 #banner .box-icons::before {
   content: "";
   position: absolute;
@@ -193,31 +247,38 @@ header .navbar ul li a:hover {
   height: calc(20% + 20px);
   background-color: #fff;
 }
+
 #banner .box-icons .box-content {
   padding: 40px 30px;
   position: relative;
   background: #925bd7;
-  box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 29px 0 black;
+          box-shadow: 0 0 29px 0 black;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
   text-align: center;
 }
+
 #banner .box-icons .box-content i {
   margin-bottom: 24px;
   padding-top: 10px;
   display: inline-block;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   font-size: 38px;
   line-height: 1;
   color: rgba(255, 255, 255, 0.6);
 }
+
 #banner .box-icons .box-content h4 {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
   color: var(--cyan);
 }
+
 #banner .box-icons .box-content:hover {
   background: #7132bd;
   cursor: pointer;
@@ -226,45 +287,69 @@ header .navbar ul li a:hover {
 
 @-webkit-keyframes up-down {
   0% {
-    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
   100% {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
 }
 
 @keyframes up-down {
   0% {
-    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
   100% {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
 }
+
 /*
 * Página - Login
 ------------------------*/
 .login {
   height: 100vh;
   background-color: #121212;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--gray);
 }
+
 .login .input-login {
   background-color: #101010;
   padding: 3px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 6px;
   border: 2px solid rebeccapurple;
   gap: 5px;
   margin-top: 5px;
+  -webkit-transition: 0.6s;
   transition: 0.6s;
 }
+
 .login .input-login input {
   border: none;
   background-color: transparent;
@@ -275,25 +360,33 @@ header .navbar ul li a:hover {
   font-size: 16px;
   color: var(--gray);
 }
+
 .login .input-login i {
   color: var(--gray);
 }
+
 .login .input-login:focus-within, .login .input-login:focus {
-  background-color: rgba(128, 68, 189, 0.0392156863);
-  box-shadow: 0px 0px 1px 5px rgba(102, 51, 153, 0.2823529412);
+  background-color: #8044bd0a;
+  -webkit-box-shadow: 0px 0px 1px 5px #66339948;
+          box-shadow: 0px 0px 1px 5px #66339948;
 }
+
 .login .form-button {
   background-color: var(--primary);
   color: var(--cyan);
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .login .form-button:hover {
   opacity: 0.8;
   background-color: #4f2677;
   color: var(--cyan);
 }
+
 .login .form-button:focus {
-  box-shadow: 0px 0px 1px 5px rgba(102, 51, 153, 0.2823529412);
+  -webkit-box-shadow: 0px 0px 1px 5px #66339948;
+          box-shadow: 0px 0px 1px 5px #66339948;
 }
 
 @media (max-width: 800px) {
@@ -305,11 +398,11 @@ header .navbar ul li a:hover {
     display: none;
   }
   .login .container .row .col-lg-4 {
-    background: rgba(79, 38, 119, 0.11);
+    background: #4f2677;
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.07);
+    border: 1px solid white;
     padding: 20px 15px;
   }
   .login .container .row .col-lg-4 h2 {
@@ -319,27 +412,47 @@ header .navbar ul li a:hover {
     font-size: 15px;
   }
 }
+
 .register {
   height: 100vh;
   background-color: #121212;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--gray);
 }
+
 .register .input-login {
   background-color: #101010;
   padding: 3px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 6px;
   border: 2px solid rebeccapurple;
   gap: 5px;
   margin-top: 5px;
+  -webkit-transition: 0.6s;
   transition: 0.6s;
 }
+
 .register .input-login input {
   border: none;
   background-color: transparent;
@@ -350,35 +463,45 @@ header .navbar ul li a:hover {
   font-size: 16px;
   color: var(--gray);
 }
-.register .input-login input[type=text] ~ #toggle-password {
+
+.register .input-login input[type="text"] ~ #toggle-password {
   color: var(--primary);
-  background-color: rgba(217, 198, 235, 0.0784313725);
+  background-color: #d9c6eb14;
   border-radius: 50%;
+  -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
 }
+
 .register .input-login i {
   color: var(--gray);
 }
+
 .register .input-login #toggle-password {
   cursor: pointer;
   padding: 5px;
+  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
+
 .register .input-login:focus-within, .register .input-login:focus {
-  background-color: rgba(128, 68, 189, 0.0392156863);
-  box-shadow: 0px 0px 1px 5px rgba(102, 51, 153, 0.2823529412);
+  background-color: #8044bd0a;
+  -webkit-box-shadow: 0px 0px 1px 5px #66339948;
+          box-shadow: 0px 0px 1px 5px #66339948;
 }
+
 .register .form-register {
-  background: rgba(79, 38, 119, 0.11);
-  backdrop-filter: blur(6px);
+  background-color: rgba(79, 38, 119, 0.12);
   -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 20px 15px;
 }
+
 .register .form-register h2 {
   text-align: center;
 }
+
 @media (max-width: 991px) {
   .register .container .row {
     margin: 10px;
@@ -387,6 +510,7 @@ header .navbar ul li a:hover {
     display: none;
   }
 }
+
 * {
   font-family: "Montserrat";
 }
@@ -395,12 +519,14 @@ header .navbar ul li a:hover {
   color: var(--primary);
   text-decoration: none;
   opacity: 1;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   font-weight: 500;
 }
+
 .link-primary:hover, .link-primary:active {
   opacity: 1;
   text-decoration: none;
-  background-color: rgba(217, 198, 235, 0.0784313725);
+  background-color: #d9c6eb14;
   color: #a258eb;
-}/*# sourceMappingURL=style.css.map */
+}

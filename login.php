@@ -47,7 +47,7 @@
 
 	<script>
 		$("i.far.fa-eye-slash").click(function() {
-			$(this).toggleClass("fa-eye-slash fa-eye")
+			$(this).toggleClass("fa-eye-slash fa-eye");
 		});
 	</script>
 
