@@ -20,7 +20,7 @@ btnTogglePassword.onclick = () => {
 
 // Máscara para o input da Página - Register
 $(document).ready( function() {
-	$('#cadastro-data-aniversario').mask('00/00/0000');
-	$('#cadastro-telefone').mask('(00) 00000-0000');
-	$('#cadastro-cpf').mask('000.000.000-00');
-} )
+	$('#register-data-nascimento').mask('00/00/0000');
+	$('#register-telefone').mask('(00) 00000-0000');
+	$('#register-cpf').mask('000.000.000-00');
+} );

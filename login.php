@@ -1,6 +1,7 @@
 <?php require 'template/includes/head.php' ?>
 <?php require 'template/includes/funcoes.php' ?>
 <?php $conn->conectar(); ?>
+
 <body>
 
 	<main class="login">
@@ -11,12 +12,12 @@
 				</div>
 				<div class="col-lg-4 col-sm-12">
 					<h2>Login</h2>
-					<form method="POST">
+					<form method="POST" action="./template/class/login.service.php">
 						<div class="form-group my-3">
 							<label for="">Email</label>
 							<span class="input-login">
 								<i class="fas fa-user"></i>
-								<input type="email" placeholder="Email" name="email">
+								<input type="email" placeholder="Email" name="login-email">
 							</span>
 						</div>
 						<div class="form-group my-3">
@@ -29,7 +30,7 @@
 						</div>
 						<p>Esqueceu sua senha? <a href="" class="link-primary">Clique aqui.</a> </p>
 						<div class="my-3">
-							<button class="form-button btn w-100" type="submit">Entrar</button>
+							<button class="primary-btn btn w-100" type="submit">Entrar</button>
 						</div>
 					</form>
 					<p>Não tem uma conta ? <a class="link-primary" href="register.php">Cadastre-se agora.</a></p>
